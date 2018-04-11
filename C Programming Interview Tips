@@ -1,0 +1,38 @@
+
+
+1)
+Sizeof_type(x) -->	#define sizeof_type( type )  ((size_t)((type*)0 + 1 )-(size_t)((type*)0))
+							OR
+			Priintf("SizeOf->%li\n", (void *)(&x + 1) - (void *)(&x));
+
+
+2)
+fun_ptr is a pointer to function fun()
+					// Defination
+				--->	void fun(int a)
+						{
+						    printf("Value of a is %d\n", a);
+						} 
+					// Assignment
+				--->	void (*fun_ptr)(int) = &fun;
+					// Usage
+				--->	(*fun_ptr)(10);
+
+3)
+different storage class specifiers
+				--->	auto, register, static, extern
+
+4)
+print anything without semicolon
+				--->	void main(void)
+					{
+					    if (printf("Hello World"))
+						{}
+					}
+
+5)
+NULL is used to indicate that the pointer doesn’t point to a valid location.
+
+
+6)
+
